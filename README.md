@@ -1,6 +1,6 @@
-# Renso.nvim
+# minimi.nvim
 
-My awesome Neovim configuration
+My awesome Neovim configuration based on the configuration by [Ardubev16](https://github.com/ardubev16).
 
 ## Installation
 
