@@ -1,14 +1,14 @@
 local M = {
-    'ellisonleao/gruvbox.nvim',
+    'folke/tokyonight.nvim',
     lazy = false,
     priority = 1000,
 }
 
 function M.config()
-    vim.o.background = 'dark'
-    -- For more configuration options, see:
-    -- @see https://github.com/ellisonleao/gruvbox.nvim#configuration
-    vim.cmd([[colorscheme gruvbox]])
+    require('tokyonight').setup({
+        style = 'storm',
+    })
+    vim.cmd([[colorscheme tokyonight]])
 end
 
 return M
