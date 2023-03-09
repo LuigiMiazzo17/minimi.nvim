@@ -36,7 +36,10 @@ M.opts = {
     compile_directory = '.',
     compile_command = {
         c = { exec = 'gcc', args = { '-Wall', '-DLOCAL', '$(FNAME)', '-o', '$(FNOEXT)' } },
-        cpp = { exec = 'g++', args = { '-Wall', '-DLOCAL', '$(FNAME)', '-o', '$(FNOEXT)' } },
+        cpp = {
+            exec = 'g++',
+            args = { '-std=c++11', '-Wall', '-DLOCAL', '$(FNAME)', '-o', '$(FNOEXT)' },
+        },
         rust = { exec = 'rustc', args = { '--cfg', 'local', '$(FNAME)' } },
         java = { exec = 'javac', args = { '$(FNAME)' } },
     },

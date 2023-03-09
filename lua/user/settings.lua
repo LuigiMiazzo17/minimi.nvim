@@ -43,7 +43,7 @@ local settings = {
             shellcheck = {
                 extra_filetypes = { 'zsh' },
             },
-            vale = {},
+            -- vale = {},
             flake8 = {},
             -- sqlfluff = { extra_args = { '--dialect', 'sqlite' } },
         },
