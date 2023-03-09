@@ -20,7 +20,7 @@ local settings = {
         formatting = {
             clang_format = {
                 -- FIXME: works only on save (had to also write it to ~/.clang-format)
-                extra_args = { '--style={IndentWidth: 4}' },
+                extra_args = { '--style={IndentWidth: 2}' },
             },
             eslint_d = {},
             tidy = {
@@ -46,7 +46,7 @@ local settings = {
             shellcheck = {
                 extra_filetypes = { 'zsh' },
             },
-            vale = {},
+            -- vale = {},
             flake8 = {},
             -- sqlfluff = { extra_args = { '--dialect', 'sqlite' } },
         },
