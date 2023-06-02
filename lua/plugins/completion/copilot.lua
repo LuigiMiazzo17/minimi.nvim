@@ -5,8 +5,8 @@ return {
         suggestion = {
             auto_trigger = true,
         },
-        filetypes = {
-            cpp = false,
-        },
+        -- filetypes = {
+        --     cpp = false,
+        -- },
     },
 }
