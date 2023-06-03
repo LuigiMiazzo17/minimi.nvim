@@ -9,12 +9,22 @@ return {
     {
         'norcalli/nvim-colorizer.lua',
         event = 'BufReadPre',
-        opts = {},
+        config = true,
     },
     {
         'lukas-reineke/indent-blankline.nvim',
+        event = 'BufReadPost',
+        config = true,
+    },
+    {
+        'RaafatTurki/hex.nvim',
         event = 'BufReadPre',
-        opts = {},
+        config = true,
+    },
+    {
+        'RaafatTurki/hex.nvim',
+        event = 'BufReadPre',
+        config = {},
     },
     {
         'RaafatTurki/hex.nvim',
