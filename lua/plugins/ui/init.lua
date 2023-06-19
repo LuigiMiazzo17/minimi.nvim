@@ -3,11 +3,12 @@ return {
     require('plugins.ui.bufferline'),
     require('plugins.ui.lualine'),
     require('plugins.ui.notify'),
-    require('plugins.ui.nvim-tree'),
+    require('plugins.ui.neo-tree'),
     require('plugins.ui.theme'),
 
     {
         'j-hui/fidget.nvim',
+        tag = 'legacy',
         event = 'VeryLazy',
         opts = {
             text = {
